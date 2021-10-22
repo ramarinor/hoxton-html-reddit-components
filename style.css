@@ -50,7 +50,8 @@
 
 .header {
 	display: grid;
-	grid-template-columns: 120px 1fr 300px;
+	grid-template-columns: 120px 1fr 340px;
+	grid-gap: 10px;
 	align-items: center;
 }
 
@@ -79,8 +80,8 @@
 
 .header-right {
 	display: grid;
-	grid-template-columns: 120px 130px 50px;
-	justify-items: end;
+	grid-template-columns: 130px 130px 40px 25px;
+	grid-gap: 5px;
 	align-items: center;
 }
 
@@ -90,7 +91,7 @@
 
 .header-right .login {
 	background-color: white;
-	padding: 5px 30px;
+	padding: 5px 25px;
 	border: 1px solid #0279d2;
 	border-radius: 30px;
 	color: #0279d2;
@@ -102,9 +103,4 @@
 	border: 1px solid #0279d2;
 	border-radius: 30px;
 	color: white;
-}
-
-.header-right img {
-	height: 40px;
-	padding-right: 10px;
 }
