@@ -21,8 +21,6 @@
 }
 
 .main-content {
-	background-color: royalblue;
-
 	display: grid;
 	grid-template:
 		"trending trending" 200px
@@ -44,7 +42,7 @@
 
 .side-bar {
 	grid-area: side-bar;
-	background-color: rgba(0, 0, 255, 0.397);
+	/* background-color: rgba(0, 0, 255, 0.397); */
 }
 
 .header {
@@ -84,7 +82,8 @@
 	align-items: center;
 }
 
-.header-right button {
+.header-right button,
+.view-all button {
 	font-weight: bold;
 }
 
@@ -99,7 +98,6 @@
 .header-right .signup {
 	background-color: #0279d2;
 	padding: 5px 30px;
-	border: 1px solid #0279d2;
 	border-radius: 30px;
 	color: white;
 }
@@ -110,11 +108,9 @@
 	padding: 10px;
 	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 	grid-auto-rows: 180px;
-
 	overflow: hidden;
 }
 .trending-item {
-	outline: solid 1px black;
 	display: grid;
 	place-items: center;
 }
@@ -124,4 +120,58 @@
 	height: 100%;
 	width: 100%;
 	border-radius: 10px;
+}
+
+.title {
+	height: 75px;
+	background: linear-gradient(white, black);
+	display: grid;
+	align-items: end;
+	justify-content: center;
+	color: white;
+}
+
+.top-communities .communities-item {
+	display: grid;
+	grid-template-columns: 20px 50px 50px 180px;
+	border-top: solid 1px black;
+}
+
+.community-arrow img {
+	height: 20px;
+}
+
+.community-image img {
+	height: 30px;
+	border-radius: 50%;
+}
+.view-all {
+	display: grid;
+	justify-items: center;
+}
+
+.view-all button {
+	width: 90%;
+	background-color: #0279d2;
+	border-radius: 30px;
+	color: white;
+	padding: 10px 0;
+	font-size: medium;
+}
+
+.categories {
+	padding: 10px;
+}
+
+.categories button {
+	background-color: #dae0e6;
+	padding: 10px;
+	color: #0279d2;
+	border-radius: 25px;
+	border: none;
+}
+
+.top-communities {
+	margin-bottom: 30px;
+	background-color: white;
 }
