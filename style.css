@@ -132,6 +132,7 @@
 }
 
 .top-communities .communities-item {
+	padding: 10px;
 	display: grid;
 	grid-template-columns: 20px 50px 50px 180px;
 	border-top: solid 1px black;
@@ -171,7 +172,9 @@
 	border: none;
 }
 
-.top-communities {
+.top-communities,
+.subscribe,
+.community-categories {
 	margin-bottom: 30px;
 	background-color: white;
 }
@@ -181,14 +184,14 @@
 	background-color: white;
 	display: grid;
 	grid-template:
-		"subscirbe-image subscribe-title" 50px
-		"subscribe-image subscribe-text" 50px
-		"subscribe-button subscribe-button" 50px /
-		50px 200px;
-	place-items: center;
+		"subscirbe-image subscribe-title" 30px
+		"subscribe-image subscribe-text" 30px
+		"subscribe-button subscribe-button" 60px /
+		70px 200px;
 }
 .subscribe-image {
 	grid-area: subscribe-image;
+	padding-top: 10px;
 }
 
 .subscribe-title {
@@ -197,11 +200,14 @@
 }
 .subscribe-text {
 	grid-area: subscribe-text;
+	font-size: smaller;
 }
 
 .subscribe-button {
 	grid-area: subscribe-button;
 	width: 100%;
+	display: grid;
+	place-items: center;
 }
 
 .subscribe img {
@@ -215,4 +221,38 @@
 	border-radius: 25px;
 	border: none;
 	width: 100%;
+}
+
+.community-categories .category {
+	font-weight: bold;
+	font-size: smaller;
+	display: grid;
+	grid-template-columns: 1fr 20px;
+	padding: 10px;
+}
+.community-categories {
+	padding: 10px;
+}
+
+.footer {
+	padding: 10px;
+	background-color: white;
+	font-weight: lighter;
+	font-size: smaller;
+	display: grid;
+	grid-template:
+		"footer-help footer-about" 1fr
+		"footer-copyrights footer-copyrights" 30px/
+		150px 150px;
+	grid-gap: 5px;
+}
+
+.footer-help {
+	grid-area: footer-help;
+}
+.footer-about {
+	grid-area: footer-about;
+}
+.footer-copyrights {
+	grid-area: footer-copyrights;
 }
