@@ -35,7 +35,6 @@
 
 .trending {
 	grid-area: trending;
-	background-color: rgba(255, 0, 0, 0.397);
 }
 
 .posts {
@@ -103,4 +102,26 @@
 	border: 1px solid #0279d2;
 	border-radius: 30px;
 	color: white;
+}
+
+.trending {
+	display: grid;
+	grid-gap: 10px;
+	padding: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	grid-auto-rows: 180px;
+
+	overflow: hidden;
+}
+.trending-item {
+	outline: solid 1px black;
+	display: grid;
+	place-items: center;
+}
+
+.trending-item img {
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	border-radius: 10px;
 }
