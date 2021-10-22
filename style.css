@@ -122,7 +122,7 @@
 	border-radius: 10px;
 }
 
-.title {
+.top-communities .title {
 	height: 75px;
 	background: linear-gradient(white, black);
 	display: grid;
@@ -174,4 +174,45 @@
 .top-communities {
 	margin-bottom: 30px;
 	background-color: white;
+}
+
+.subscribe {
+	padding: 10px;
+	background-color: white;
+	display: grid;
+	grid-template:
+		"subscirbe-image subscribe-title" 50px
+		"subscribe-image subscribe-text" 50px
+		"subscribe-button subscribe-button" 50px /
+		50px 200px;
+	place-items: center;
+}
+.subscribe-image {
+	grid-area: subscribe-image;
+}
+
+.subscribe-title {
+	grid-area: subscribe-title;
+	font-weight: bold;
+}
+.subscribe-text {
+	grid-area: subscribe-text;
+}
+
+.subscribe-button {
+	grid-area: subscribe-button;
+	width: 100%;
+}
+
+.subscribe img {
+	height: 50px;
+}
+
+.subscribe-button button {
+	background-color: #ff4600;
+	padding: 10px;
+	color: white;
+	border-radius: 25px;
+	border: none;
+	width: 100%;
 }
