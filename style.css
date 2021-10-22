@@ -237,6 +237,8 @@
 		"footer-copyrights footer-copyrights" 30px/
 		150px 150px;
 	grid-gap: 5px;
+	position: sticky;
+	top: 15px;
 }
 
 .footer-help {
